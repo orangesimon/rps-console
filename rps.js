@@ -78,6 +78,14 @@ function playGame() {
         playRound(humanSelection, computerSelection);
         console.log("Computer: " + computerScore + "\n You: " + humanScore);
     }
+
+    if (humanScore > computerScore) {
+        console.log("Congratulations on winning rock paper scissors!")
+    } else if (humanScore < computerScore) {
+        console.log("Better luck next time! Your opponent won rock paper scissors!");
+    } else {
+        console.log("Interesting. You tied in rock paper scissors!")
+    }
 }
 
 
